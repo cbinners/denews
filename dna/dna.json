@@ -1,0 +1,58 @@
+{
+  "Version": 1,
+  "UUID": "b8ecfb1b-4592-11e8-9142-3c15c2e23b84",
+  "Name": "denews",
+  "Properties": {
+    "description": "provides an application template",
+    "language": "en"
+  },
+  "PropertiesSchemaFile": "properties_schema.json",
+  "BasedOn": {
+    "H": null
+  },
+  "RequiresVersion": 23,
+  "DHTConfig": {
+    "HashType": "sha2-256",
+    "NeighborhoodSize": 0
+  },
+  "Progenitor": {
+    "Identity": "",
+    "PubKey": null
+  },
+  "Zomes": [
+    {
+      "Name": "post",
+      "Description": "Post",
+      "CodeFile": "post.js",
+      "RibosomeType": "js",
+      "BridgeFuncs": null,
+      "Config": null,
+      "Entries": [
+        {
+          "Name": "post",
+          "DataFormat": "json",
+          "Schema": "",
+          "SchemaFile": "post.json",
+          "Sharing": "public"
+        }
+      ],
+      "Functions": [
+        {
+          "Name": "postCreate",
+          "CallingType": "json",
+          "Exposure": "public"
+        },
+        {
+          "Name": "postDelete",
+          "CallingType": "json",
+          "Exposure": "public"
+        },
+        {
+          "Name": "postGet",
+          "CallingType": "json",
+          "Exposure": "public"
+        }
+      ]
+    }
+  ]
+}
