@@ -51,6 +51,11 @@
           "Name": "postGet",
           "CallingType": "json",
           "Exposure": "public"
+        },
+        {
+          "Name": "postUpdate",
+          "CallingType": "json",
+          "Exposure": "public"
         }
       ]
     }
